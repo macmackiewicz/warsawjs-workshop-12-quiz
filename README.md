@@ -1,6 +1,6 @@
-# warsawjs-workshop-12-be-a-milionare
+# warsawjs-workshop-12-quiz
 
-> A Vue.js project
+> A Vue.js training project for #12 Warsawjs workshop
 
 ## Build Setup
 
