@@ -3,7 +3,6 @@
 export const quiz = [
   {
     title: "Z jakich 3 warstw składa się JavaScript?",
-    hints: [],
     answers: [
       "Core, BOM, DOM",
       "Webkit, DevTools, HTML",
@@ -13,8 +12,7 @@ export const quiz = [
     correctAnswerIndex: 0
   },
   {
-    title: "Difference between `==` & `===`?",
-    hints: [],
+    title: "Różnica między `==` & `===`?",
     answers: [
       "żadna",
       "jest, ale nie pamiętam",
@@ -25,7 +23,6 @@ export const quiz = [
   },
   {
     title: "Różnica między `null` a `undefined`?",
-    hints: [],
     answers: [
       "żadna",
       "jest, ale nie pamiętam",
@@ -36,7 +33,6 @@ export const quiz = [
   },
   {
     title: "W jaki sposób można odwrócić ciąg znaków? Z **pies** otrzymać **seip**.",
-    hints: [],
     answers: [
       "`'pies'.reverse()`",
       "`'pies'.split('').reverse().join('')`",
@@ -48,7 +44,6 @@ export const quiz = [
   },
   {
     title: "Co zwróci operator `typeof` wykonany przez takimi wartościami: `[]`, `{}`, `1`, `NaN`, `null`, `pies`, `Function`",
-    hints: [],
     answers: [
       "array, object, number, number, null, string, function",
       "array, object, number, number, object, string, function",
@@ -60,7 +55,6 @@ export const quiz = [
   },
   {
     title: "Jak usunąć element (znacznik) z DOM (Document Object Model)?",
-    hints: [],
     answers: [
       "`element.removeNode()`",
       "`element.removeElement()`",
@@ -71,7 +65,6 @@ export const quiz = [
   },
   {
     title: "Jak skopiować tablicę?",
-    hints: [],
     answers: [
       "`[1, 2].copy(true)`;",
       "`[1, 2].copy()`;",

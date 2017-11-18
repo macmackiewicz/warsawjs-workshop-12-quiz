@@ -30,7 +30,7 @@
                   <v-btn block v-if="isUserCorrect" @click="nextQuestion">
                     Następne pytanie
                   </v-btn>
-                  <v-btn block v-else-if="hasUserAnswered && !isUserCorrect"
+                  <v-btn block v-else-if="userAnswer !== null"
                          @click="restartQuiz"
                   >
                     Zacznij od początku
@@ -49,7 +49,6 @@
 import {quiz} from './quiz'
 
 export default {
-  name: 'app',
   data () {
     return {
       currentQuestionIndex: 0,
@@ -60,11 +59,8 @@ export default {
     currentQuestion () {
       return quiz[this.currentQuestionIndex]
     },
-    hasUserAnswered () {
-      return this.userAnswer !== null
-    },
     isUserCorrect () {
-      return this.hasUserAnswered && this.currentQuestion.correctAnswerIndex === this.userAnswer
+      return this.currentQuestion.correctAnswerIndex === this.userAnswer
     },
     hasUserWon () {
       return quiz.length === this.currentQuestionIndex
@@ -81,7 +77,7 @@ export default {
       }
     },
     selectAnswer (answerIndex) {
-      if (!this.hasUserAnswered) {
+      if (this.userAnswer === null) {
         this.userAnswer = answerIndex
       }
     },
